@@ -1,2 +1,16 @@
 class CLIView:
-    pass
+    def show_menu(self):
+        print("\n===============================")
+        print("🌤️  MOOD MANAGER SYSTEM")
+        print("===============================")
+        print("1. Input Mood Harian")
+        print("2. Lihat Rekomendasi Aktivitas")
+        print("3. Quotes Harian")
+        print("4. Skor Kebahagiaan")
+        print("5. Lihat Riwayat Mood")
+        print("6. Statistik & Tren Mood")
+        print("7. Hapus Data Mood")
+        print("8. Reminder Harian")
+        print("0. Keluar")
+        print("===============================")
+        return input("Pilih menu (0–8): ")
