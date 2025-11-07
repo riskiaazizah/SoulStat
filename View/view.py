@@ -28,3 +28,14 @@ class View:
     def tampilanRekomendasi(self, mood, rekom):
         print(f"\n📊 Mood kamu hari ini: {mood}")
         print(f"💡 Rekomendasi aktivitas: {rekom}")
+
+    def tampilkanError(self, message):
+        print(f"\n⚠️ {message}")
+
+    def konfirmasiTerhapus(self, deleted):
+        if deleted:
+            print(f"\n✅ Data tanggal {deleted['tanggal']} berhasil dihapus!")
+        else:
+            print("\n❌ Nomor tidak valid.")
+
+            

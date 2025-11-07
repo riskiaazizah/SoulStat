@@ -21,3 +21,9 @@ class moodModel:
             "Netral": "Lakukan aktivitas kecil yang menyenangkan ☕"
         }
         return rekom.get(mood, "Tetap semangat hari ini!")
+    
+    def hapusMood(self, index):
+        if 0 <= index < len(self.data_mood):
+            return self.data_mood.pop(index)
+        return None
+    
