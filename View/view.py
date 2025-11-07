@@ -14,3 +14,17 @@ class View:
         print("0. Keluar")
         print("===============================")
         return input("Pilih menu (0–8): ")
+    
+    def tanyaMood(self):
+        print("\nPilih mood kamu hari ini:")
+        print("1. Senang 😊")
+        print("2. Sedih 😢")
+        print("3. Stres 😣")
+        print("4. Netral 😐")
+        pilihan = input("Masukkan pilihan (1–4): ")
+        mood_dict = {"1": "Senang", "2": "Sedih", "3": "Stres", "4": "Netral"}
+        return mood_dict.get(pilihan, "Netral")
+
+    def tampilanRekomendasi(self, mood, rekom):
+        print(f"\n📊 Mood kamu hari ini: {mood}")
+        print(f"💡 Rekomendasi aktivitas: {rekom}")
