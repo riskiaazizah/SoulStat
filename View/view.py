@@ -15,6 +15,19 @@ class View:
         print("===============================")
         return input("Pilih menu (0–8): ")
     
+    def tabelTampilanMood(self, data):
+        if not data:
+            print("\n📭 Belum ada data mood tersimpan.")
+            return
+        print("\n===============================")
+        print("📅 Riwayat Mood")
+        print("===============================")
+        print("No | Tanggal      | Mood")
+        print("---------------------------------")
+        for i, item in enumerate(data, start=1):
+            print(f"{i:<2} | {item['tanggal']} | {item['mood']}")
+        print("---------------------------------")
+
     def tanyaMood(self):
         print("\nPilih mood kamu hari ini:")
         print("1. Senang 😊")
