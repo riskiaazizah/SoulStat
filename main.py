@@ -1,5 +1,5 @@
 from Model.moodModel import MoodModel
-from View.cli_view import CLIView
+from View.view import View
 from Controller.moodController import MoodController
 
 def main():

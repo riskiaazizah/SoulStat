@@ -1,7 +1,7 @@
 from Model.moodModel import MoodModel
-from View.cli_view import CLIView
+from View.view import View
 
 class moodController:
-    def _init_(self, model: MoodModel, view: CLIView):
+    def _init_(self, model: MoodModel, view: View):
         self.model = model
         self.view = view

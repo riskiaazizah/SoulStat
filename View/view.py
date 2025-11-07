@@ -1,4 +1,4 @@
-class CLIView:
+class View:
     def show_menu(self):
         print("\n===============================")
         print("🌤️  MOOD MANAGER SYSTEM")
