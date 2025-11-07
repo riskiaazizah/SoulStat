@@ -12,3 +12,12 @@ class moodModel:
 
     def get_all_moods(self):
         return self.data_mood
+    
+    def getRekomendasi(self, mood):
+        rekom = {
+            "Senang": "Pertahankan semangatmu dan sebarkan energi positif! 🌞",
+            "Sedih": "Luangkan waktu untuk menenangkan diri. Dengarkan musik lembut 🎧",
+            "Stres": "Coba tarik napas dalam dan istirahat sejenak 🌿",
+            "Netral": "Lakukan aktivitas kecil yang menyenangkan ☕"
+        }
+        return rekom.get(mood, "Tetap semangat hari ini!")
