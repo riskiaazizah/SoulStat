@@ -1,7 +1,7 @@
 from Model.moodModel import MoodModel
 from View.view import View
 
-class moodController:
+class MoodController:
     def _init_(self, model: MoodModel, view: View):
         self.model = model
         self.view = view
@@ -18,7 +18,7 @@ class moodController:
         self.view.tampilanRekomendasi(mood, rekom)
 
     def hapusMood(self):
-        data = self.model.get_all_moods()
+        data = self.model.getSemuaMood()
         self.view.tabelTampilanMood(data)
         if not data:
             return
@@ -28,3 +28,7 @@ class moodController:
             self.view.konfirmasiTerhapus(deleted)
         except ValueError:
             self.view.tampilkanError("Input harus berupa angka.")
+    
+    def hitungKebahagiaan(self, score):
+        score = self.model.getNilaiMood()
+        self.view.tampilanNilaiKebahagiaan(score)

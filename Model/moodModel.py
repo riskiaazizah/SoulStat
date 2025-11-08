@@ -1,7 +1,7 @@
 import datetime
 import random
 
-class moodModel:
+class MoodModel:
     def _init_(self):
         self.data_mood = []
 
@@ -10,7 +10,7 @@ class moodModel:
         self.data_mood.append({"tanggal": tanggal, "mood": mood})
         return tanggal
 
-    def get_all_moods(self):
+    def getSemuaMood(self):
         return self.data_mood
     
     def getRekomendasi(self, mood):
@@ -21,6 +21,13 @@ class moodModel:
             "Netral": "System idle mode ☕. Maybe spice it up a bit—listen to your favorite playlist or dance randomly 💃"
         }
         return rekom.get(mood, "Tetap semangat hari ini!")
+    
+    def getNilaiMood(self):
+        skor_map = {"Senang": 4, "Netral": 3, "Sedih": 2, "Stres": 1}
+        if not self.data_mood:
+            return 0
+        total = sum(skor_map[m["mood"]] for m in self.data_mood)
+        return total / len(self.data_mood)
     
     def hapusMood(self, index):
         if 0 <= index < len(self.data_mood):

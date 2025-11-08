@@ -1,16 +1,16 @@
 class View:
-    def show_menu(self):
+    def tampilkanMenu(self):
         print("\n===============================")
-        print("🌤️  MOOD MANAGER SYSTEM")
+        print("  👋 Welcome to SoulStat 👋")
         print("===============================")
         print("1. Input Mood Harian")
         print("2. Lihat Rekomendasi Aktivitas")
         print("3. Quotes Harian")
         print("4. Skor Kebahagiaan")
         print("5. Lihat Riwayat Mood")
-        print("6. Statistik & Tren Mood")
+        print("6. Statistik Mood")
         print("7. Hapus Data Mood")
-        print("8. Reminder Harian")
+        print("8. Pengingat Harian")
         print("0. Keluar")
         print("===============================")
         return input("Pilih menu (0–8): ")
@@ -50,5 +50,8 @@ class View:
             print(f"\n✅ Data tanggal {deleted['tanggal']} berhasil dihapus!")
         else:
             print("\n❌ Nomor tidak valid.")
+    
+    def tampilanNilaiKebahagiaan(self, score):
+        print(f"\n🌈 Skor kebahagiaan kamu: {score:.2f} / 4")
 
             
