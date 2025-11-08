@@ -15,10 +15,10 @@ class moodModel:
     
     def getRekomendasi(self, mood):
         rekom = {
-            "Senang": "Pertahankan semangatmu dan sebarkan energi positif! 🌞",
-            "Sedih": "Luangkan waktu untuk menenangkan diri. Dengarkan musik lembut 🎧",
-            "Stres": "Coba tarik napas dalam dan istirahat sejenak 🌿",
-            "Netral": "Lakukan aktivitas kecil yang menyenangkan ☕"
+            "Senang": "Nice! Sistem emosimu lagi stable ✅. Share good vibes-nya sebelum expired! 🌞",
+            "Sedih": "Error detected: low dopamine levels 😢. Fix it with comfort food or cute cat videos 🐱💖",
+            "Stres": "CPU overheating detected 🧠💨. Time to cool down—breathe, stretch, maybe touch some grass 🌿",
+            "Netral": "System idle mode ☕. Maybe spice it up a bit—listen to your favorite playlist or dance randomly 💃"
         }
         return rekom.get(mood, "Tetap semangat hari ini!")
     
