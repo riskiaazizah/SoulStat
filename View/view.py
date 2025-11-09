@@ -73,3 +73,7 @@ class View:
         for mood, count in stats.items():
             print(f"{mood:<8}: {count} hari")
         print("---------------------------------")
+
+    def tampilanPengingat(self, reminder):
+        print(f"\n🔔 Reminder: {reminder}")
+
