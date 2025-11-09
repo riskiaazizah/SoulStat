@@ -66,3 +66,10 @@ class View:
         for i, item in enumerate(data, start=1):
             print(f"{i:<2} | {item['tanggal']} | {item['mood']}")
         print("---------------------------------")
+
+    def tampilanStatistik(self, stats):
+        print("\n📈 Statistik Mood Mingguan")
+        print("---------------------------------")
+        for mood, count in stats.items():
+            print(f"{mood:<8}: {count} hari")
+        print("---------------------------------")

@@ -2,7 +2,7 @@ from Model.moodModel import MoodModel
 from View.view import View
 
 class MoodController:
-    def _init_(self, model: MoodModel, view: View):
+    def __init__(self, model: MoodModel, view: View):
         self.model = model
         self.view = view
         
@@ -36,3 +36,7 @@ class MoodController:
     def tampilkanRiwayat(self):
         data = self.model.getSemuaMood()
         self.view.tabelTampilanMood(data)
+
+    def tampilkanStatistik(self):
+        stats = self.model.getStatistik()
+        self.view.tampilanStatistik(stats)

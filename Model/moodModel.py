@@ -2,7 +2,7 @@ import datetime
 import random
 
 class MoodModel:
-    def _init_(self):
+    def __init__(self):
         self.data_mood = []
 
     def add_mood(self, mood):
@@ -33,4 +33,10 @@ class MoodModel:
         if 0 <= index < len(self.data_mood):
             return self.data_mood.pop(index)
         return None
+    
+    def getStatistik(self):
+        stats = {"Senang": 0, "Sedih": 0, "Stres": 0, "Netral": 0}
+        for item in self.data_mood:
+            stats[item["mood"]] += 1
+        return stats
     
