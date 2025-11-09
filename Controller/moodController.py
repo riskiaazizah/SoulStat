@@ -32,3 +32,7 @@ class MoodController:
     def hitungKebahagiaan(self, score):
         score = self.model.getNilaiMood()
         self.view.tampilanNilaiKebahagiaan(score)
+        
+    def tampilkanRiwayat(self):
+        data = self.model.getSemuaMood()
+        self.view.tabelTampilanMood(data)
