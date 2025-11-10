@@ -16,15 +16,17 @@ def main():
             case "2" :
                 controller.tampilkanRekomendasi()
             case "3" :
-                pass
+                controller.tampilkanQuote()
             case "4" :
                 controller.hitungKebahagiaan()
             case "5" :
-                pass
+                controller.tampilkanRiwayat()
             case "6" :
-                pass
+                controller.tampilkanStatistik()
             case "7" :
                 controller.hapusMood()
+            case "8" :
+                controller.tampilkanPengingat()
             case "0":
                 print("\n👋 Terima kasih telah menggunakan SoulStat!")
                 exit()

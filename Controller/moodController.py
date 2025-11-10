@@ -29,7 +29,7 @@ class MoodController:
         except ValueError:
             self.view.tampilkanError("Input harus berupa angka.")
     
-    def hitungKebahagiaan(self, score):
+    def hitungKebahagiaan(self):
         score = self.model.getNilaiMood()
         self.view.tampilanNilaiKebahagiaan(score)
         
