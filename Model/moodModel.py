@@ -50,3 +50,14 @@ class MoodModel:
             "Sometimes life’s just like a movie with no plot twists—no surprises, just chill.",
         ]
         return random.choice(quotes)
+    
+    def getPengingat(self):
+        reminders = [
+            "Minum air sekarang juga 💧",
+            "Waktunya istirahat sejenak 😌",
+            "Jangan lupa tersenyum hari ini 😊",
+            "Gerakkan badanmu sebentar 🧘",
+            "Jangan lupa beribadah 🤲"
+        ]
+        return random.choice(reminders)
+

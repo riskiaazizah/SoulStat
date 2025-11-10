@@ -44,3 +44,7 @@ class MoodController:
     def tampilkanQuote(self):
         quote = self.model.getQuote()
         self.view.tampilanPengingat(quote)
+
+    def tampilkanPengingat(self):
+        reminder = self.model.getPengingat()
+        self.view.tampilanPengingat(reminder)
