@@ -40,3 +40,13 @@ class MoodModel:
             stats[item["mood"]] += 1
         return stats
     
+    def getQuote(self):
+        quotes = [
+            "You're stronger than you think 💪",
+            "Bad days are just pages in your story 🌈",
+            "Be kind to yourself today 🌻",
+            "Small steps every day lead to big change 🚀",
+            "Life’s like coffee without sugar—just enough flavor, no drama.",
+            "Sometimes life’s just like a movie with no plot twists—no surprises, just chill.",
+        ]
+        return random.choice(quotes)

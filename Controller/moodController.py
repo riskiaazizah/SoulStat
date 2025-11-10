@@ -40,3 +40,7 @@ class MoodController:
     def tampilkanStatistik(self):
         stats = self.model.getStatistik()
         self.view.tampilanStatistik(stats)
+
+    def tampilkanQuote(self):
+        quote = self.model.getQuote()
+        self.view.tampilanPengingat(quote)
