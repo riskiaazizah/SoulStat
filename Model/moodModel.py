@@ -42,12 +42,15 @@ class MoodModel:
     
     def getQuote(self):
         quotes = [
-            "You're stronger than you think 💪",
+            "You're stronger better than you think 💪",
             "Bad days are just pages in your story 🌈",
             "Be kind to yourself today 🌻",
-            "Small steps every day lead to big change 🚀",
+            "Small steps in everyday lead to big change in the future 🚀",
             "Life’s like coffee without sugar—just enough flavor, no drama.",
             "Sometimes life’s just like a movie with no plot twists—no surprises, just chill.",
+            "I'm stronger than I've been before.",
+            "In the end, you gonna be alright.",
+            "Cause you still the same but only entirely diferent"
         ]
         return random.choice(quotes)
     

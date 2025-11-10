@@ -77,5 +77,8 @@ class View:
     def tampilanPengingat(self, reminder):
         print(f"\n🔔 Reminder: {reminder}")
 
-    def tampilanPengingat(self, reminder):
-        print(f"\n🔔 Reminder: {reminder}")
+    def tampilanQuote(self, quote):
+        print("\n✨ Quotes Harian ✨")
+        print("---------------------------------")
+        print(f"\"{quote}\"")
+        print("---------------------------------")
