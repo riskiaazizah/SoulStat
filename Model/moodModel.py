@@ -50,7 +50,11 @@ class MoodModel:
             "Sometimes life’s just like a movie with no plot twists—no surprises, just chill.",
             "I'm stronger than I've been before.",
             "In the end, you gonna be alright.",
-            "Cause you still the same but only entirely diferent"
+            "Cause you still the same but only entirely diferent",
+            "Waktu yang terbaik untuk menanam pohon adalah 20 tahun lalu. Waktu terbaik yang kedua adalah sekarang",
+            "Melakukan lebih baik daripada mengatakan",
+            "Kebahagiaan adalah pilihan yang memerlukan usaha",
+            "Waktu yang lewat tidak pernah didapatkan lagi"
         ]
         return random.choice(quotes)
     
