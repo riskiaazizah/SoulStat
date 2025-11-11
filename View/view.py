@@ -1,17 +1,17 @@
 class View:
     def tampilkanMenu(self):
-        print("\n===============================")
-        print("  👋 Welcome to SoulStat 👋")
-        print("===============================")
-        print("1. Input Mood Harian")
-        print("2. Lihat Rekomendasi Aktivitas")
-        print("3. Quotes Harian")
-        print("4. Skor Kebahagiaan")
-        print("5. Lihat Riwayat Mood")
-        print("6. Statistik Mood")
-        print("7. Hapus Data Mood")
-        print("8. Pengingat Harian")
-        print("0. Keluar")
+        print("\n" + "="*40)
+        print("  🌞 SoulStat : Your Mood Buddy 🌞")
+        print("="*40)
+        print(" [1] 📝 Input Mood Harian")
+        print(" [2] 🎯 Lihat Rekomendasi Aktivitas")
+        print(" [3] 💬 Quotes Harian")
+        print(" [4] 💖 Skor Kebahagiaan")
+        print(" [5] 📚 Lihat Riwayat Mood")
+        print(" [6] 📊 Statistik Mood")
+        print(" [7] 🗑️ Hapus Data Mood")
+        print(" [8] ⏰ Pengingat Harian")
+        print(" [0] 🚪 Keluar")
         print("===============================")
         return input("Pilih menu (0–8): ")
     
@@ -31,11 +31,12 @@ class View:
     def tanyaMood(self):
         print("\nPilih mood kamu hari ini:")
         print("1. Senang 😊")
-        print("2. Sedih 😢")
-        print("3. Stres 😣")
-        print("4. Netral 😐")
-        pilihan = input("Masukkan pilihan (1–4): ")
-        mood_dict = {"1": "Senang", "2": "Sedih", "3": "Stres", "4": "Netral"}
+        print("2. Semangat 🤩")
+        print("3. Sedih 😢")
+        print("4. Stres 😣")
+        print("5. Netral 😐")
+        pilihan = input("Masukkan pilihan (1–5): ")
+        mood_dict = {"1": "Senang", "2" : "Semangat",  "3": "Sedih", "4": "Stres", "5": "Netral"}
         return mood_dict.get(pilihan, "Netral")
 
     def tampilanRekomendasi(self, mood, rekom):
@@ -52,7 +53,7 @@ class View:
             print("\n❌ Nomor tidak valid.")
     
     def tampilanNilaiKebahagiaan(self, score):
-        print(f"\n🌈 Skor kebahagiaan kamu: {score:.2f} / 4")
+        print(f"\n🌈 Skor kebahagiaan kamu: {score:.2f} / 5")
 
     def tabelTampilanMood(self, data):
         if not data:

@@ -16,6 +16,7 @@ class MoodModel:
     def getRekomendasi(self, mood):
         rekom = {
             "Senang": "Nice! Sistem emosimu lagi stable ✅. Share good vibes-nya sebelum expired! 🌞",
+            "Semangat": "🔥 The universe is aligning with your energy—don’t stop now, you’ve got this. Keep the momentum going!",
             "Sedih": "Error detected: low dopamine levels 😢. Fix it with comfort food or cute cat videos 🐱💖",
             "Stres": "CPU overheating detected 🧠💨. Time to cool down—breathe, stretch, maybe touch some grass 🌿",
             "Netral": "System idle mode ☕. Maybe spice it up a bit—listen to your favorite playlist or dance randomly 💃"
@@ -23,7 +24,7 @@ class MoodModel:
         return rekom.get(mood, "Tetap semangat hari ini!")
     
     def getNilaiMood(self):
-        skor_map = {"Senang": 4, "Netral": 3, "Sedih": 2, "Stres": 1}
+        skor_map = {"Senang": 5, "Semangat" : 4, "Netral": 3, "Sedih": 2, "Stres": 1}
         if not self.data_mood:
             return 0
         total = sum(skor_map[m["mood"]] for m in self.data_mood)
@@ -35,7 +36,7 @@ class MoodModel:
         return None
     
     def getStatistik(self):
-        stats = {"Senang": 0, "Sedih": 0, "Stres": 0, "Netral": 0}
+        stats = {"Senang": 0, "Semangat" : 0, "Sedih": 0, "Stres": 0, "Netral": 0}
         for item in self.data_mood:
             stats[item["mood"]] += 1
         return stats
