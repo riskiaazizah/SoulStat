@@ -56,11 +56,26 @@ class MoodModel:
     
     def getPengingat(self):
         reminders = [
-            "Minum air sekarang juga 💧",
-            "Waktunya istirahat sejenak 😌",
-            "Jangan lupa tersenyum hari ini 😊",
-            "Gerakkan badanmu sebentar 🧘",
-            "Jangan lupa beribadah 🤲"
+        "Minum air sekarang juga 💧",
+        "Waktunya istirahat sejenak 😌",
+        "Jangan lupa tersenyum hari ini 😊",
+        "Gerakkan badanmu sebentar 🧘",
+        "Jangan lupa beribadah 🤲",
+        "Cek postur dudukmu, jangan bungkuk 💺",
+        "Tarik napas dalam dan rileks 🌿",
+        "Udah makan belum? 🍽",
+        "Coba stretching dulu biar nggak kaku 🙆",
+        "Lihat hal-hal kecil yang bisa kamu syukuri hari ini ✨",
+        "Jauhkan HP sebentar, istirahatkan matamu 👀",
+        "Bersihkan meja atau ruang kerjamu 🧹",
+        "Tulis hal baik yang terjadi hari ini 📝",
+        "Coba senyum ke diri sendiri di cermin 😁",
+        "Waktunya jalan-jalan kecil keliling rumah 🚶",
+        "Jangan terlalu keras sama diri sendiri 💖",
+        "Dengerin lagu favoritmu sebentar 🎧",
+        "Kirim pesan ke teman atau keluarga, tanyakan kabar mereka 💬",
+        "Minum air hangat biar tubuh segar lagi ☕",
+        "Ingat, kamu udah berjuang sejauh ini — good job! 🌈"
         ]
         return random.choice(reminders)
 
